@@ -57,22 +57,27 @@ def pregunta_02():
     """
 
     # Lea el archivo `gm_2008_region.csv` y asignelo al DataFrame `df`
-    df = ____
+    df = pd.read_csv('gm_2008_region.csv')
 
     # Imprima las dimensiones del DataFrame
-    print(____.____)
+    #print(____.____)
+    df.shape
 
     # Imprima la correlación entre las columnas `life` y `fertility` con 4 decimales.
-    print(____)
+    #print(____)
+    print(np.corrcoef(df.life, df.fertility)[0,1].round(4))
 
     # Imprima la media de la columna `life` con 4 decimales.
-    print(____)
+    #print(____)
+    print(df.life.mean().round(4))
 
     # Imprima el tipo de dato de la columna `fertility`.
-    print(____)
+    #print(____)
+    print(df.fertility.dtype)
 
     # Imprima la correlación entre las columnas `GDP` y `life` con 4 decimales.
-    print(____)
+    #print(____)
+    print(np.corrcoef(df.GDP, df.life)[0,1].round(4))
 
 
 def pregunta_03():
