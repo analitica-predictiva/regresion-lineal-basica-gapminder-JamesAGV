@@ -61,7 +61,7 @@ def pregunta_02():
 
     # Imprima las dimensiones del DataFrame
     #print(____.____)
-    df.shape
+    print(df.shape)
 
     # Imprima la correlación entre las columnas `life` y `fertility` con 4 decimales.
     #print(____)
